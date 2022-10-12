@@ -6,7 +6,6 @@ import sys
 import time
 
 import d2lzh_pytorch as d2l
-
 mnist_train = torchvision.datasets.FashionMNIST(root='F:/Datasets/FashionMNIST', train=True, download=True, transform=transforms.ToTensor())
 mnist_test = torchvision.datasets.FashionMNIST(root='F:/Datasets/FashionMNIST', train=False, download=True, transform=transforms.ToTensor())
 print(type(mnist_train))

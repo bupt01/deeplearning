@@ -1,11 +1,10 @@
 import torch
 import numpy as np
 import sys
-sys.path.append("..")
+sys.path.append("/data/anaconda3/envs/pytorch/lib")
 import d2lzh_pytorch as d2l
 batch_size = 256
 train_iter, test_iter = d2l.load_data_fashion_mnist(batch_size)
-
 num_inputs, num_outputs, num_hiddens = 784, 10, 256
 
 W1 = torch.tensor(np.random.normal(0, 0.01, (num_inputs, num_hiddens)), dtype=torch.float)
